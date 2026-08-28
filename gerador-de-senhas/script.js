@@ -11,7 +11,7 @@ let novaSenha = '';
 
 sizePassword.innerHTML = sliderElement.value;
 
-slider.oninput = function() {
+sliderElement.oninput = function() {
   sizePassword.innerHTML = this.value;
 }
 
