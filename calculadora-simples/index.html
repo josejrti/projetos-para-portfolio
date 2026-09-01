@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <div class="calc">
+        <input type="text" id="calc-display" disabled>
+        <div class="calc-buttons">
+            <button onclick="ApagarDisplay()">AC</button>
+            <button onclick="ApagarCaractere()"><</button>
+            <button onclick="AdicionarCaractere('/')">/</button>
+            <button onclick="AdicionarCaractere('*')">*</button>
+            <button onclick="AdicionarCaractere('7')">7</button>
+            <button onclick="AdicionarCaractere('8')">8</button>
+            <button onclick="AdicionarCaractere('9')">9</button>
+            <button onclick="AdicionarCaractere('-')">-</button>
+            <button onclick="AdicionarCaractere('4')">4</button>
+            <button onclick="AdicionarCaractere('5')">5</button>
+            <button onclick="AdicionarCaractere('6')">6</button>
+            <button onclick="AdicionarCaractere('+')">+</button>
+            <button onclick="AdicionarCaractere('1')">1</button>
+            <button onclick="AdicionarCaractere('2')">2</button>
+            <button onclick="AdicionarCaractere('3')">3</button>
+            <button onclick="AdicionarCaractere('0')" class="zero-button">0</button>
+            <button onclick="AdicionarCaractere('.')">.</button>
+            <button onclick="Calcular()" class="calc-button">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
