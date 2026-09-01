@@ -13,8 +13,8 @@ body {
 }
 body header h1 {
     text-transform: uppercase;
-    font-size:20px;
-    padding:20px;
+    font-size:30px;
+    padding:40px;
 }
 main .calc {
     background-color: rgb(13, 231, 140);

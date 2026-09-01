@@ -19,3 +19,4 @@ function Calcular() {
         display.value = 'Erro'
     }
 }
+
