@@ -4,42 +4,219 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNews - Notícias sobre tecnologia</title>
+
     <meta name="description" content="Confira as últimas notícias mundiais sobre tecnologia.">
     <meta name="keywords" content="noticias, news, tech, tecnologia, ultimas, artigos, ti">
     <meta name="author" content="José Júnior">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-zinc-800 text-gray-200 text-center font-bold">
-    <div class="grid grid-cols-[4fr_1fr] grid-rows-[1fr_5fr_5fr_auto] [grid-template-areas:'header_header'_'article_aside'_'section_aside'_'footer_footer'] gap-1">
-        <header class="bg-zinc-900 [grid-area:header] flex justify-between p-5">
-            <h1 class="text-white text-[20px] capitalize">TechNews</h1>
-            <ul class="flex">
-                <li>
-                    <button type="button" class="bg-gray-200 hover:bg-gray-300 text-black mr-3 text-[10px] w-[60px] h-[30px] rounded-lg">Home</button>
-                </li>
-                <li>
-                    <button type="button" class="bg-gray-200 hover:bg-gray-300 text-black mr-3 text-[10px] w-[60px] h-[30px] rounded-lg">Assinar</button>
-                </li>
-                <li>
-                    <button type="button" class="bg-gray-200 hover:bg-gray-300 text-black mr-3 text-[10px] w-[60px] h-[30px] rounded-lg">Sobre</button>
-                </li>
-                <li>
-                    <button type="button" class="bg-gray-200 hover:bg-gray-300 text-black mr-3 text-[10px] w-[60px] h-[30px] rounded-lg">Contato</button>
-                </li>
-            </ul>
+
+    <div
+        class="
+            grid
+            grid-cols-1
+            grid-rows-[auto_auto_auto_auto]
+            [grid-template-areas:'header'_'article'_'section'_'aside'_'footer']
+            gap-1
+
+            sm:grid-cols-2
+            sm:grid-rows-[auto_auto_auto_auto]
+            sm:[grid-template-areas:'header_header'_'article_article'_'section_aside'_'footer_footer']
+
+            lg:grid-cols-[4fr_1fr]
+            lg:grid-rows-[auto_1fr_1fr_auto]
+            lg:[grid-template-areas:'header_header'_'article_aside'_'section_aside'_'footer_footer']
+        "
+    >
+
+        <!-- HEADER -->
+        <header
+            class="
+                bg-zinc-900
+                [grid-area:header]
+                flex
+                flex-col
+                items-center
+                justify-center
+                gap-4
+                p-4
+
+                sm:flex-row
+                sm:justify-between
+                sm:p-5
+            "
+        >
+
+            <h1 class="text-white text-xl capitalize">
+                TechNews
+            </h1>
+
+            <nav>
+                <ul
+                    class="
+                        flex
+                        flex-wrap
+                        justify-center
+                        gap-2
+                    "
+                >
+
+                    <li>
+                        <button
+                            type="button"
+                            class="
+                                bg-gray-200
+                                hover:bg-gray-300
+                                text-black
+                                text-[10px]
+                                w-[60px]
+                                h-[30px]
+                                rounded-lg
+                            "
+                        >
+                            Home
+                        </button>
+                    </li>
+
+                    <li>
+                        <button
+                            type="button"
+                            class="
+                                bg-gray-200
+                                hover:bg-gray-300
+                                text-black
+                                text-[10px]
+                                w-[60px]
+                                h-[30px]
+                                rounded-lg
+                            "
+                        >
+                            Assinar
+                        </button>
+                    </li>
+
+                    <li>
+                        <button
+                            type="button"
+                            class="
+                                bg-gray-200
+                                hover:bg-gray-300
+                                text-black
+                                text-[10px]
+                                w-[60px]
+                                h-[30px]
+                                rounded-lg
+                            "
+                        >
+                            Sobre
+                        </button>
+                    </li>
+
+                    <li>
+                        <button
+                            type="button"
+                            class="
+                                bg-gray-200
+                                hover:bg-gray-300
+                                text-black
+                                text-[10px]
+                                w-[60px]
+                                h-[30px]
+                                rounded-lg
+                            "
+                        >
+                            Contato
+                        </button>
+                    </li>
+
+                </ul>
+            </nav>
+
         </header>
-        <article class="[grid-area:article] bg-zinc-900 p-2">
-            <h2 class="uppercase">Artigos</h2>
+
+
+        <!-- ARTIGOS -->
+        <article
+            class="
+                [grid-area:article]
+                bg-zinc-900
+                p-4
+                min-h-[180px]
+
+                sm:min-h-[250px]
+
+                lg:min-h-[300px]
+            "
+        >
+            <h2 class="uppercase text-lg">
+                Artigos
+            </h2>
         </article>
-        <aside class="[grid-area:aside] bg-zinc-900 p-2">
-            <h2 class="uppercase">Publicidade</h2>
+
+
+        <!-- PUBLICIDADE -->
+        <aside
+            class="
+                [grid-area:aside]
+                bg-zinc-900
+                p-4
+                min-h-[150px]
+
+                sm:min-h-[250px]
+
+                lg:min-h-[300px]
+            "
+        >
+            <h2 class="uppercase text-lg">
+                Publicidade
+            </h2>
         </aside>
-        <section class="[grid-area:section] bg-zinc-900 p-2">
-            <h2 class="uppercase">Últimas Notícias</h2>
+
+
+        <!-- NOTÍCIAS -->
+        <section
+            class="
+                [grid-area:section]
+                bg-zinc-900
+                p-4
+                min-h-[250px]
+
+                sm:min-h-[300px]
+
+                lg:min-h-[350px]
+            "
+        >
+            <h2 class="uppercase text-lg">
+                Últimas Notícias
+            </h2>
         </section>
-        <footer class="[grid-area:footer] bg-zinc-900 p-4">
-            <p class="text-[10px] tracking-wide">GIRO NEWS - 2026 | <a href="https://github.com/josejrti" target="_blank" title="José Júnior">JOSÉ JÚNIOR</a></p>
+
+
+        <!-- FOOTER -->
+        <footer
+            class="
+                [grid-area:footer]
+                bg-zinc-900
+                p-4
+            "
+        >
+            <p class="text-[10px] tracking-wide">
+                GIRO NEWS - 2026 |
+                <a
+                    href="https://github.com/josejrti"
+                    target="_blank"
+                    title="José Júnior"
+                    class="hover:text-white"
+                >
+                    JOSÉ JÚNIOR
+                </a>
+            </p>
         </footer>
+
     </div>
+
 </body>
 </html>
