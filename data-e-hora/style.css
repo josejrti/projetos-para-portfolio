@@ -53,6 +53,19 @@ body div p {
     }
 }
 
+/* Celulares */
+@media (max-width: 480px) {
+    body {
+        justify-content: flex-start;
+        padding-top: 20vh;
+    }
+
+    body div p {
+        font-size: clamp(2rem, 12vw, 3.5rem);
+        margin: 15px 0;
+    }
+}
+
 /* Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
     body div p {
